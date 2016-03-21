@@ -1,5 +1,5 @@
 # Redbucket
-A Chrome Extension which adds links to Redmine to Bitbucket Cloud.
+A Chrome extension which adds links to Redmine on Bitbucket Cloud.
 
 ![anime.gif](/image/anime.gif)
 
