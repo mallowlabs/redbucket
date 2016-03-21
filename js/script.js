@@ -33,11 +33,21 @@
         for (var i = 0, l = subjects.length; i < l; i++) {
           var content = subjects[i];
           var innerHTML = content.innerHTML;
+          var links = content.getElementsByTagName('a');
+          var linksString = '';
+          if (links != null) {
+            for (var j = 0, m = links.length; j < m; j++) {
+              linksString += links[j].innerText;
+            }
+          }
           var issues = innerHTML.match(/#[0-9]+/g);
           if (content == null || issues == null) {
             continue
           }
           for (var j = 0, m = issues.length; j < m; j++) {
+            if (linksString.indexOf(issues[j]) >= 0) {
+              continue; // ignore linked strings
+            }
             var issueId = issues[j].replace(/#/, '');
             var link = '<a href="' + redmine + '/issues/' + issueId + '" target="_blank">' + issues[j] + '</a>';
             content.innerHTML = innerHTML.replace(issues[j], link);
