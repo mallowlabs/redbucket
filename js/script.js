@@ -28,7 +28,7 @@
       }
 
       var addLinks = function(config) {
-        var subjects = document.querySelectorAll('.subject, .commit-message > p');
+        var subjects = document.querySelectorAll('.subject, .commit-message > p, .changeset');
 
         for (var i = 0, l = subjects.length; i < l; i++) {
           var content = subjects[i];
