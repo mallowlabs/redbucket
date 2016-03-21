@@ -1,6 +1,12 @@
 # Redbucket
 A Chrome Extension which adds links to Redmine to Bitbucket Cloud.
 
+![anime.gif](/image/anime.gif)
+
+## Feature
+
+ * Configurable URL mapping
+
 ## Credits
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
